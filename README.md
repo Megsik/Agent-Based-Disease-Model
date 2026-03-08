@@ -6,19 +6,19 @@ Dataset-
 For parameter estimation , WHO TB burden data for India in 2023 was taken from the official WHO website. 
 
 Model Features-
-Agent based disease transmission
-Spacial contact network
-Disease progression and recovery
-Parameter calibration for transmission rate, latent transmission rate, revovery rate and mortality
+Agent based disease transmission,
+Spacial contact network,
+Disease progression and recovery,
+Parameter calibration (for transmission rate, latent transmission rate, revovery rate and mortality) and
 Simulation of incidence and mortality results (using MonteCarlo)
 
 While running the model- parameter_estimation.jl estimates the parameters and after that main_revised.jl could be run for final results.
 
 Future Improvements-
-Age-structured population
-Improved parameters calibration
-Larger population size
-Visulatisations 
+Age-structured population,
+Improved parameters calibration,
+Larger population size,
+Visulatisations,
 Expanded for other diseases and countries
 
 Development notes- 
