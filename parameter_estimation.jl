@@ -3,7 +3,7 @@
 using CSV, DataFrames, Random, Statistics, BlackBoxOptim, Dates
 
 # ---------- Loading file ---------- #
-tb_outcomes_path = raw"C:/Users/Dell/Downloads/TB_burden_countries_2025-11-26.csv"
+tb_outcomes_path = raw"TB_burden_countries_2025-11-26.csv"
 country = "India"
 year_target = 2023
 
@@ -298,4 +298,5 @@ println("CFR: mean=$(mean(cfrs)), 95%CI=(", quantile(cfrs, 0.025), ",", quantile
 # Save MC results to CSV
 val_df = DataFrame(incidence_per100k = incs, mortality_per100k = morts, cfr = cfrs)
 CSV.write("calibration_validation_results.csv", val_df)
+
 println("Saved MC validation results to calibration_validation_results.csv")
